@@ -49,5 +49,11 @@ body {
   background-color: white;
   color: #22254b;
   padding: 1rem;
-  transform: translateX(100%);
+  transform: translateY(100%);
+  transform: transform 0.3s ease-in-out;
+}
+
+.movie:hover .movie-over{
+  transform: translateY(0%);
+
 }
