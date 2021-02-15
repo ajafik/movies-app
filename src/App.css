@@ -19,6 +19,7 @@ body {
 .movie-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movie {
@@ -32,7 +33,9 @@ body {
 }
 
 .movie img {
-  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
 }
 
 .movie-info {
@@ -75,12 +78,35 @@ header {
   justify-content: flex-end;
 }
 
-.search{
-  border: 2px solid  #373b69;
+.search {
+  border: 2px solid #373b69;
   border-radius: 50px;
   background-color: transparent;
-  color: #373b69;
+  color: #ffffff;
   font-family: inherit;
   font-size: 1.2rem;
   padding: 0.5 rem 1.5rem;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.tag {
+  background-color: #22254b;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.tag.green {
+  color: rgb(30, 190, 30);
+}
+
+.tag.orange {
+  color: orange;
+}
+
+.tag.red {
+  color: red;
 }
