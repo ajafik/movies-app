@@ -21,13 +21,23 @@ function App() {
 
 
   return (
-    <div className="movie-container">
+    <div>
 
-      {movies.length> 0 && movies.map(movie =>
-        (<Movies key={movie.id} {...movie}/>)
-      )}
+      <header>
+        <input className="search" type="search" placeholder="Search..." />
+      </header>
+
+      <div className="movie-container">
+
+        {movies.length > 0 && movies.map(movie =>
+          (<Movies key={movie.id} {...movie} />)
+        )}
+
+      </div>
 
     </div>
+
+
   );
 }
 
